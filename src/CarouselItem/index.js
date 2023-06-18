@@ -1,10 +1,11 @@
 import React from 'react'
 
 export default function CarouselItem(props) {
+  console.log(JSON.stringify(props));
   return (
     <div>
-      <div>jhh</div>
-      <img alt={props.description} src={props.icon}/>
+      <div>{props.item.description}</div>
+      <img alt={props.item.description} src={props.item.icon.default}/>
     </div>
   )
 }
